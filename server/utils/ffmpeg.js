@@ -46,7 +46,7 @@ const mergeAudioVideo = (originalVideoPath, audioTracks, outputPath) => {
     audioTracks.forEach((track, index) => {
       const inputIndex = index + 1; // 1-based because 0 is original video
       const delayMs = Math.round(track.startTime * 1000);
-      filterComplex += `[${inputIndex}:a]volume=3.0,adelay=${delayMs}|${delayMs}[a${inputIndex}];`;
+      filterComplex += `[${inputIndex}:a]volume=3.0,asetpts=PTS-STARTPTS,adelay=${delayMs}|${delayMs}[a${inputIndex}];`;
       mixInputs += `[a${inputIndex}]`;
     });
 
