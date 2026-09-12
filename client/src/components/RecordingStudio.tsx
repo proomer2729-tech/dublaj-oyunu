@@ -23,7 +23,13 @@ export default function RecordingStudio({ room }: { room: any }) {
 
   // Initialize Microphone Stream
   useEffect(() => {
-    navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true } })
+    navigator.mediaDevices.getUserMedia({ 
+      audio: { 
+        echoCancellation: false, 
+        noiseSuppression: false,
+        autoGainControl: false
+      } 
+    })
       .then(stream => {
         setMediaStream(stream);
       })
@@ -76,7 +82,7 @@ export default function RecordingStudio({ room }: { room: any }) {
         const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
         setRecordings(prev => ({ ...prev, [tiedReplikId]: audioBlob }));
       };
-      recorder.start();
+      recorder.start(100);
       activeMediaRecorder.current = recorder;
     } else if (phase.status === 'REVIEWING' || phase.status === 'WAITING_FOR_ACTION' || phase.status === 'WATCHING_SCENE') {
       if (activeMediaRecorder.current && activeMediaRecorder.current.state === 'recording') {
