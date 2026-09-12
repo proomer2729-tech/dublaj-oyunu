@@ -741,5 +741,163 @@
         ]
       }
     ]
+  },
+  {
+    "id": "sifir-bir-gokhan-cio",
+    "title": "Sıfır Bir - Gökhan vs Cio",
+    "category": "Dizi",
+    "videoUrl": "/videos/gokhan-cio.mp4",
+    "duration": 60,
+    "maxPlayers": 4,
+    "characters": [
+      {
+        "id": "char_1",
+        "name": "Gökhan",
+        "avatar": "🧔🏻",
+        "repliks": [
+          {
+            "id": "r1",
+            "text": "Lan Bilo",
+            "startTime": 0,
+            "endTime": 1
+          },
+          {
+            "id": "r2",
+            "text": "Şu arabadan Sigaramı Al gel hele",
+            "startTime": 2,
+            "endTime": 4
+          },
+          {
+            "id": "r4",
+            "text": "anamın amında",
+            "startTime": 6,
+            "endTime": 7
+          },
+          {
+            "id": "r5",
+            "text": "Nerde Oğlum Yolun Başında",
+            "startTime": 8,
+            "endTime": 10
+          },
+          {
+            "id": "r7",
+            "text": "neyi süperdadan konuşcam cio görmüyonmu soru sormak için soruyo",
+            "startTime": 15,
+            "endTime": 18
+          },
+          {
+            "id": "r9",
+            "text": "Hayırdır Cio Seni ne rahatsız ettiki",
+            "startTime": 22,
+            "endTime": 25
+          },
+          {
+            "id": "r11",
+            "text": "kime ne demişim ben karnından konuşma gardeş herkes burda yüzleşek",
+            "startTime": 29,
+            "endTime": 34
+          },
+          {
+            "id": "r13",
+            "text": "sen kimsin lan hayırdır olum ne derdin varsa açık açık konuş",
+            "startTime": 37,
+            "endTime": 41
+          },
+          {
+            "id": "r15",
+            "text": "kafana göre cio nasıl istiyosan öyle olsun",
+            "startTime": 43,
+            "endTime": 45
+          },
+          {
+            "id": "r19",
+            "text": "Ben bu yaştan sonra hiç bişeyimi değiştiremem cihan",
+            "startTime": 55,
+            "endTime": 57
+          }
+        ]
+      },
+      {
+        "id": "char_2",
+        "name": "Bilo",
+        "avatar": "👦",
+        "repliks": [
+          {
+            "id": "r3",
+            "text": "Nerdeki abi araba",
+            "startTime": 4,
+            "endTime": 5
+          }
+        ]
+      },
+      {
+        "id": "char_3",
+        "name": "Cio",
+        "avatar": "😈",
+        "repliks": [
+          {
+            "id": "r6",
+            "text": "Sen hayırdır abi gençlerle Süperdadan Konuşuyon",
+            "startTime": 11,
+            "endTime": 14
+          },
+          {
+            "id": "r8",
+            "text": "olsun abi herkesle düzgün konuşcan bundan sonra hepsi benim kardeşim",
+            "startTime": 18,
+            "endTime": 23
+          },
+          {
+            "id": "r10",
+            "text": "rahatsız oldum abi ben içerdeykende terse yapıyormuşsun millete",
+            "startTime": 25,
+            "endTime": 29
+          },
+          {
+            "id": "r12",
+            "text": "ne karnındam konuşacam ya he kimle seni yüzleştirecem",
+            "startTime": 34,
+            "endTime": 37
+          }
+        ]
+      },
+      {
+        "id": "char_4",
+        "name": "Cihan",
+        "avatar": "😠",
+        "repliks": [
+          {
+            "id": "r14",
+            "text": "Lanlu Lunlu Konuşmayın ha kötü olur sizin için ha",
+            "startTime": 41,
+            "endTime": 43
+          },
+          {
+            "id": "r16",
+            "text": "lan susun yaa allahalla ikinizinde kalbini kıracam ya gel böyle gel abi şöyle gel",
+            "startTime": 45,
+            "endTime": 51
+          },
+          {
+            "id": "r17",
+            "text": "Ayıp Sana Gökhan Abi Ya",
+            "startTime": 51,
+            "endTime": 53
+          },
+          {
+            "id": "r18",
+            "text": "bu tavrını konuşmanı değiştir abe ya",
+            "startTime": 53,
+            "endTime": 55
+          },
+          {
+            "id": "r20",
+            "text": "ya abi geçermisin şöyle geç allahını seversen yaa",
+            "startTime": 57,
+            "endTime": 60
+          }
+        ]
+      }
+    ]
   }
 ]
