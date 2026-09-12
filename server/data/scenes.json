@@ -1,0 +1,654 @@
+[
+  {
+    "id": "berber-salonu",
+    "title": "Berberci Videosu",
+    "category": "Film",
+    "videoUrl": "/videos/berber.mp4",
+    "duration": 37,
+    "maxPlayers": 2,
+    "characters": [
+      {
+        "id": "char_1",
+        "name": "Müşteri",
+        "avatar": "👱‍♂️",
+        "repliks": [
+          {
+            "id": "r1",
+            "text": "Abi mi kesicek?",
+            "startTime": 1,
+            "endTime": 2
+          },
+          {
+            "id": "r2",
+            "text": "Abi saçın arkası havaya doğru önü de yatık olacak sağ taraf arkaya doğru daha uzun sol taraf öne doğruda daha kısa itti bi de kenerlarında bi güzel şerit geçe olur mu?",
+            "startTime": 3,
+            "endTime": 13
+          },
+          {
+            "id": "r8",
+            "text": "Ne yapıyon sen yaa?",
+            "startTime": 31,
+            "endTime": 33
+          }
+        ]
+      },
+      {
+        "id": "char_2",
+        "name": "Berberci",
+        "avatar": "✂️",
+        "repliks": [
+          {
+            "id": "r3",
+            "text": "Olur.",
+            "startTime": 14,
+            "endTime": 15
+          },
+          {
+            "id": "r4",
+            "text": "Salonu da balkona katak mı lan he, daha ferah olur!",
+            "startTime": 16,
+            "endTime": 21
+          },
+          {
+            "id": "r5",
+            "text": "Ulan az adamın olun lan, adam olun oğlum!",
+            "startTime": 21,
+            "endTime": 24
+          },
+          {
+            "id": "r6",
+            "text": "Saçın var diye nasıl kestireceğini şaşırıyon lan!",
+            "startTime": 24,
+            "endTime": 27
+          },
+          {
+            "id": "r7",
+            "text": "Asker tıraşından yürü.",
+            "startTime": 27,
+            "endTime": 29
+          },
+          {
+            "id": "r9",
+            "text": "Kıpraşma.",
+            "startTime": 30,
+            "endTime": 31
+          },
+          {
+            "id": "r10",
+            "text": "Kalk sen devam et lan geliyom ben.",
+            "startTime": 35,
+            "endTime": 37
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sesegel-umidi-kestik",
+    "title": "SeseGel vs Ümidi - Kestik",
+    "category": "YouTube",
+    "videoUrl": "/videos/sesegel-umidi.mp4",
+    "duration": 47,
+    "maxPlayers": 3,
+    "characters": [
+      {
+        "id": "char_1",
+        "name": "Emrecan",
+        "avatar": "🧑",
+        "repliks": [
+          {
+            "id": "r1",
+            "text": "Atarsın abi ya.",
+            "startTime": 0,
+            "endTime": 1
+          },
+          {
+            "id": "r4",
+            "text": "Arkadaşlar.",
+            "startTime": 7,
+            "endTime": 8
+          },
+          {
+            "id": "r5",
+            "text": "At bakalım bu golü göster bize kendini kanıtla! Yemin ederim, yemin ederim sen, sen çok kötüsün, sen çok kötüsün abi sen!",
+            "startTime": 8,
+            "endTime": 16
+          },
+          {
+            "id": "r10",
+            "text": "Ohaaaaaaa! Ohaa Hasan Abii!",
+            "startTime": 21,
+            "endTime": 26
+          },
+          {
+            "id": "r12",
+            "text": "Bu Ümit Abi çok değişti bu arada Hasan Abi farkettin mi bunu?",
+            "startTime": 27,
+            "endTime": 30
+          },
+          {
+            "id": "r14",
+            "text": "Ohaaaaaa!",
+            "startTime": 38,
+            "endTime": 39
+          },
+          {
+            "id": "r15",
+            "text": "Aaaa...",
+            "startTime": 41,
+            "endTime": 42
+          },
+          {
+            "id": "r18",
+            "text": "Asla kesmicem!",
+            "startTime": 43,
+            "endTime": 44
+          }
+        ]
+      },
+      {
+        "id": "char_2",
+        "name": "SeseGel",
+        "avatar": "🧔‍♂️",
+        "repliks": [
+          {
+            "id": "r2",
+            "text": "Golü izler miyiz bakın.",
+            "startTime": 1,
+            "endTime": 2
+          },
+          {
+            "id": "r6",
+            "text": "Hahahaha!",
+            "startTime": 4,
+            "endTime": 5
+          },
+          {
+            "id": "r8",
+            "text": "Yaa abi bu neyy yaa!",
+            "startTime": 11,
+            "endTime": 13
+          },
+          {
+            "id": "r9",
+            "text": "2 tane gol atmamız lazım ne kadar?",
+            "startTime": 16,
+            "endTime": 18
+          },
+          {
+            "id": "r11",
+            "text": "Penaltı bu şans faktörü var.",
+            "startTime": 26,
+            "endTime": 28
+          },
+          {
+            "id": "r13",
+            "text": "Abicim yok bizde laf bol bak, penaltıda şans faktörü var ama sen kaleci ile karşı karşıya kaçırıyosan oynamıcan bu oyunu.",
+            "startTime": 32,
+            "endTime": 38
+          },
+          {
+            "id": "r17",
+            "text": "Kestik tamam kestik.",
+            "startTime": 42,
+            "endTime": 43
+          }
+        ]
+      },
+      {
+        "id": "char_3",
+        "name": "Ümidi",
+        "avatar": "👦",
+        "repliks": [
+          {
+            "id": "r3",
+            "text": "Ya Hasan abi bu işler eskidi abi 2013'de kaldı bunlar ya.",
+            "startTime": 3,
+            "endTime": 7
+          },
+          {
+            "id": "r7",
+            "text": "Hasan Abi penaltıyı ben kaçırmadım.",
+            "startTime": 19,
+            "endTime": 20
+          },
+          {
+            "id": "r16",
+            "text": "Orayı kestik abi kestik Emrecan kestik.",
+            "startTime": 41,
+            "endTime": 44
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kurtlar-vadisi-aslanbey",
+    "title": "Kurtlar Vadisi - 3-2 Aldık Maçı",
+    "category": "Dizi",
+    "videoUrl": "/videos/kurtlar-vadisi.mp4",
+    "duration": 42,
+    "maxPlayers": 3,
+    "characters": [
+      {
+        "id": "char_1",
+        "name": "Dedektif",
+        "avatar": "🕵️‍♂️",
+        "repliks": [
+          {
+            "id": "r1",
+            "text": "İsmin çok farklı kim koymuş?",
+            "startTime": 0,
+            "endTime": 2
+          },
+          {
+            "id": "r4",
+            "text": "Genç yaşta ölmüş annen.",
+            "startTime": 6,
+            "endTime": 8
+          },
+          {
+            "id": "r6",
+            "text": "Annen yaşasa seni ne olarak görmek isterdi?",
+            "startTime": 9,
+            "endTime": 11
+          },
+          {
+            "id": "r9",
+            "text": "Peki sen ne olmak isterdin?",
+            "startTime": 15,
+            "endTime": 16
+          },
+          {
+            "id": "r12",
+            "text": "Neden peki?",
+            "startTime": 19,
+            "endTime": 20
+          },
+          {
+            "id": "r14",
+            "text": "Neden Almanya'da mafya babası olmak istemiyorsun da burda istiyosun?",
+            "startTime": 23,
+            "endTime": 28
+          },
+          {
+            "id": "r16",
+            "text": "Çok mu meraklısın?",
+            "startTime": 33,
+            "endTime": 34
+          }
+        ]
+      },
+      {
+        "id": "char_2",
+        "name": "Polat",
+        "avatar": "🕴️",
+        "repliks": [
+          {
+            "id": "r2",
+            "text": "Annem.",
+            "startTime": 2.1,
+            "endTime": 3
+          },
+          {
+            "id": "r5",
+            "text": "Maalesef.",
+            "startTime": 8.1,
+            "endTime": 9
+          },
+          {
+            "id": "r7",
+            "text": "Diplomat.",
+            "startTime": 11.1,
+            "endTime": 12
+          },
+          {
+            "id": "r10",
+            "text": "Mafya Babası.",
+            "startTime": 16.1,
+            "endTime": 17
+          },
+          {
+            "id": "r13",
+            "text": "Siz niye savcı olduysanız... Adalet.",
+            "startTime": 20.1,
+            "endTime": 22
+          },
+          {
+            "id": "r15",
+            "text": "Orda katil oldum. Aynanın arkasında kim var?",
+            "startTime": 28.1,
+            "endTime": 32
+          },
+          {
+            "id": "r17",
+            "text": "Aynanın arkasındakiler kadar değil.",
+            "startTime": 34.1,
+            "endTime": 36
+          }
+        ]
+      },
+      {
+        "id": "char_3",
+        "name": "Aslanbey",
+        "avatar": "🧔‍♂️",
+        "repliks": [
+          {
+            "id": "r3",
+            "text": "Dakika 1 gol 1. Baban baban!",
+            "startTime": 3.1,
+            "endTime": 6
+          },
+          {
+            "id": "r8",
+            "text": "2-0.",
+            "startTime": 13,
+            "endTime": 14
+          },
+          {
+            "id": "r11",
+            "text": "Ne yapmaya çalışıyorsun lan sen!",
+            "startTime": 17.1,
+            "endTime": 19
+          },
+          {
+            "id": "r18",
+            "text": "Çok rahat, çok profesyonel... 3-2 aldık maçı, maç biter.",
+            "startTime": 37,
+            "endTime": 41
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "keloglan-devler",
+    "title": "Keloğlan - Devler Tartışması",
+    "category": "Çizgi Film",
+    "videoUrl": "/videos/keloglan-devler.mp4",
+    "duration": 28,
+    "maxPlayers": 3,
+    "characters": [
+      {
+        "id": "char_1",
+        "name": "Yeşil Dev",
+        "avatar": "👹",
+        "repliks": [
+          {
+            "id": "r1",
+            "text": "Annem bizden bol bol kozalak biraz da meyve toplamamızı istedi.",
+            "startTime": 3,
+            "endTime": 7
+          },
+          {
+            "id": "r3",
+            "text": "Bol kozalak ve meyve diyorum sanaaa!",
+            "startTime": 12,
+            "endTime": 14
+          },
+          {
+            "id": "r5",
+            "text": "Olmaz öyle! Anneme sormak için eve dönsek daha iyi olur.",
+            "startTime": 21,
+            "endTime": 24
+          }
+        ]
+      },
+      {
+        "id": "char_2",
+        "name": "Mavi Dev",
+        "avatar": "👺",
+        "repliks": [
+          {
+            "id": "r2",
+            "text": "Hayır koca kafa! Annem biraz meyve toplayın, bol bol da kozalak getirin dedi.",
+            "startTime": 7,
+            "endTime": 12
+          },
+          {
+            "id": "r4",
+            "text": "Hayır biraz meyve bol kozalak, istersen eve dönüp anneme tekrar soralım.",
+            "startTime": 14,
+            "endTime": 20
+          }
+        ]
+      },
+      {
+        "id": "char_3",
+        "name": "Keloğlan",
+        "avatar": "👦",
+        "repliks": [
+          {
+            "id": "r6",
+            "text": "İkisi de aynı şeyi söylüyor ama farkında değiller.",
+            "startTime": 24,
+            "endTime": 27
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "recep-ivedik-duayen",
+    "title": "Recep İvedik - Bu İşin Duayeni",
+    "category": "Film",
+    "videoUrl": "/videos/recep-ivedik.mp4",
+    "duration": 16,
+    "maxPlayers": 3,
+    "characters": [
+      {
+        "id": "char_1",
+        "name": "Kıyafetçi Abi",
+        "avatar": "👔",
+        "repliks": [
+          {
+            "id": "r1",
+            "text": "Tam gutu gibi üstüne oturdu gardaş.",
+            "startTime": 0,
+            "endTime": 1
+          },
+          {
+            "id": "r3",
+            "text": "Lan neresi olmamış kofik sen ne anlarsın modadan, bu işin duayeni benim.",
+            "startTime": 3,
+            "endTime": 7
+          },
+          {
+            "id": "r5",
+            "text": "La in di git sünepeye bak hele, geydiği elbiseye bak.",
+            "startTime": 13,
+            "endTime": 16
+          }
+        ]
+      },
+      {
+        "id": "char_2",
+        "name": "Genç Adam",
+        "avatar": "👕",
+        "repliks": [
+          {
+            "id": "r2",
+            "text": "Abi bence bu olmamış ya.",
+            "startTime": 1,
+            "endTime": 3
+          }
+        ]
+      },
+      {
+        "id": "char_3",
+        "name": "Recep İvedik",
+        "avatar": "🧔",
+        "repliks": [
+          {
+            "id": "r4",
+            "text": "Ne anlıyosun lan modadan sen gofik gofik, bu işin duayeni bu adam Metin abi, Metin abi! Çık lan dışarı!",
+            "startTime": 8,
+            "endTime": 13
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kibar-feyzo",
+    "title": "Kibar Feyzo - Kurban Eti",
+    "category": "Film",
+    "videoUrl": "/videos/kibar-feyzo.mp4",
+    "duration": 9,
+    "maxPlayers": 2,
+    "characters": [
+      {
+        "id": "char_1",
+        "name": "Şapkalı Hacı",
+        "avatar": "👴",
+        "repliks": [
+          {
+            "id": "r1",
+            "text": "Nedir ulan bu?",
+            "startTime": 1,
+            "endTime": 2
+          },
+          {
+            "id": "r3",
+            "text": "Bu kadar böyük kesersen kime yeter lan bu et gavat!",
+            "startTime": 3,
+            "endTime": 7
+          },
+          {
+            "id": "r4",
+            "text": "Koskoca bir köy doyacak bu kurbanla!",
+            "startTime": 7,
+            "endTime": 9
+          }
+        ]
+      },
+      {
+        "id": "char_2",
+        "name": "Yaşlı Amca",
+        "avatar": "👳‍♂️",
+        "repliks": [
+          {
+            "id": "r2",
+            "text": "Ettir ağem.",
+            "startTime": 2,
+            "endTime": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kolpacino-lig",
+    "title": "Kendini Ligde Zannediyo",
+    "category": "Film",
+    "videoUrl": "/videos/kolpacino-lig.mp4",
+    "duration": 21,
+    "maxPlayers": 2,
+    "characters": [
+      {
+        "id": "char_1",
+        "name": "Kolpaçino",
+        "avatar": "😎",
+        "repliks": [
+          {
+            "id": "r1",
+            "text": "Özgür bey son birşey söyleyebilirmiyim?",
+            "startTime": 0,
+            "endTime": 2
+          },
+          {
+            "id": "r3",
+            "text": "Olumlu.",
+            "startTime": 3,
+            "endTime": 4
+          },
+          {
+            "id": "r4",
+            "text": "Abi abi bak şimdi biz bu lavuğun evine gidicez ya, o kamili kapıdan pencereden bizi sıyırma bi kesicek kendini ligde zannediyo. Bak ona böyle yapıcam bilader bi bakarmısın, onun kulağının dibine bi inicem çat çat 2 tane koyucam onun varya aklını alıcam.",
+            "startTime": 4,
+            "endTime": 21
+          }
+        ]
+      },
+      {
+        "id": "char_2",
+        "name": "Özgür",
+        "avatar": "👱‍♂️",
+        "repliks": [
+          {
+            "id": "r2",
+            "text": "Olumlu mu?",
+            "startTime": 2,
+            "endTime": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ezel-kullanilmak",
+    "title": "Ezel - Sonrasında güzel hiçbir şey yok abi",
+    "category": "Dizi",
+    "videoUrl": "/videos/ezel-kullanilmak.mp4",
+    "duration": 22,
+    "maxPlayers": 2,
+    "characters": [
+      {
+        "id": "char_1",
+        "name": "Ezel Bayraktar",
+        "avatar": "🤵",
+        "repliks": [
+          {
+            "id": "r1",
+            "text": "Hep kullanılmak, hep kullanılmak...",
+            "startTime": 1,
+            "endTime": 3
+          },
+          {
+            "id": "r2",
+            "text": "Nasıl bir his Teyfik?",
+            "startTime": 5,
+            "endTime": 6
+          },
+          {
+            "id": "r4",
+            "text": "Sonra?",
+            "startTime": 13,
+            "endTime": 14
+          }
+        ]
+      },
+      {
+        "id": "char_2",
+        "name": "Teyfik",
+        "avatar": "🧔",
+        "repliks": [
+          {
+            "id": "r3",
+            "text": "Çok güzel bi his abi. Bu dünyadaki en güzel his. Kullanıldığını anlayana kadar.",
+            "startTime": 6,
+            "endTime": 12
+          },
+          {
+            "id": "r5",
+            "text": "Sonra...",
+            "startTime": 15,
+            "endTime": 16
+          },
+          {
+            "id": "r6",
+            "text": "Sonrası yok abi.",
+            "startTime": 17,
+            "endTime": 19
+          },
+          {
+            "id": "r7",
+            "text": "Sonrasında güzel hiç bişi yok.",
+            "startTime": 19,
+            "endTime": 22
+          }
+        ]
+      }
+    ]
+  }
+]
