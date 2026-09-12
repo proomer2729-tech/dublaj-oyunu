@@ -899,5 +899,71 @@
         ]
       }
     ]
+  },
+  {
+    "id": "umidi-dingiltere",
+    "title": "Emrecan & Ümidi - Dingiltere",
+    "category": "YouTube",
+    "videoUrl": "/videos/umidi-dingiltere.mp4",
+    "duration": 14,
+    "maxPlayers": 2,
+    "characters": [
+      {
+        "id": "char_1",
+        "name": "Ümidi",
+        "avatar": "🧔",
+        "repliks": [
+          {
+            "id": "r1",
+            "text": "Dingiltere ve İran Ne diyon",
+            "startTime": 0,
+            "endTime": 1
+          },
+          {
+            "id": "r3",
+            "text": "ne",
+            "startTime": 4,
+            "endTime": 5
+          },
+          {
+            "id": "r4",
+            "text": "Senin baban ingilterelimiydi",
+            "startTime": 5,
+            "endTime": 6
+          },
+          {
+            "id": "r6",
+            "text": "Dingiltere alır",
+            "startTime": 9,
+            "endTime": 10
+          }
+        ]
+      },
+      {
+        "id": "char_2",
+        "name": "Emrecan",
+        "avatar": "👦",
+        "repliks": [
+          {
+            "id": "r2",
+            "text": "Oaahhhh Bak Ümit Abii",
+            "startTime": 1,
+            "endTime": 3
+          },
+          {
+            "id": "r5",
+            "text": "hayır Benim İngiliz Akrabalarım Var Yapma Bidaha Şunu yaa",
+            "startTime": 6,
+            "endTime": 9
+          },
+          {
+            "id": "r7",
+            "text": "yaa ümit abi ben gidiyom oynamıcam bak yapma şunu heee",
+            "startTime": 10,
+            "endTime": 13
+          }
+        ]
+      }
+    ]
   }
 ]
