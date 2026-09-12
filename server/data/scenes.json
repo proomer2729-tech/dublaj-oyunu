@@ -965,5 +965,84 @@
         ]
       }
     ]
+  },
+  {
+    "id": "okannn",
+    "title": "Okan Sokan",
+    "category": "Animasyon",
+    "videoUrl": "/videos/okannn.mp4",
+    "duration": 10,
+    "maxPlayers": 3,
+    "characters": [
+      {
+        "id": "char_1",
+        "name": "Motorlu Böcek",
+        "avatar": "🐜",
+        "repliks": [
+          {
+            "id": "r1",
+            "text": "Evim Burda dayı aç kapıyı",
+            "startTime": 0,
+            "endTime": 2
+          },
+          {
+            "id": "r3",
+            "text": "Okan",
+            "startTime": 3,
+            "endTime": 4
+          },
+          {
+            "id": "r5",
+            "text": "annana sokan",
+            "startTime": 5,
+            "endTime": 6
+          },
+          {
+            "id": "r8",
+            "text": "okan abiiii",
+            "startTime": 8,
+            "endTime": 10
+          }
+        ]
+      },
+      {
+        "id": "char_2",
+        "name": "Güvenlik Böcek",
+        "avatar": "🪲",
+        "repliks": [
+          {
+            "id": "r2",
+            "text": "öyleyse bir komşunun adını ver",
+            "startTime": 2,
+            "endTime": 3
+          },
+          {
+            "id": "r4",
+            "text": "Hangi Okan",
+            "startTime": 4,
+            "endTime": 5
+          },
+          {
+            "id": "r6",
+            "text": "benimle dalgamı geçiyorsun sen",
+            "startTime": 6,
+            "endTime": 7
+          }
+        ]
+      },
+      {
+        "id": "char_3",
+        "name": "Okan",
+        "avatar": "🐛",
+        "repliks": [
+          {
+            "id": "r7",
+            "text": "Selamm",
+            "startTime": 7,
+            "endTime": 8
+          }
+        ]
+      }
+    ]
   }
 ]
