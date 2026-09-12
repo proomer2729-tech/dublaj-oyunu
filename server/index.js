@@ -17,6 +17,13 @@ const io = new Server(server, {
 app.use(cors());
 app.use(express.json());
 
+// Maintenance mode: Block access on Render so the public site is down
+if (process.env.RENDER) {
+  app.use((req, res, next) => {
+    res.send("<body style='background:#111;color:#fff;display:flex;justify-content:center;align-items:center;height:100vh;font-family:sans-serif;'><h1>Oyun Kurucu Tarafından Şimdilik Kapatıldı!</h1></body>");
+  });
+}
+
 app.use(express.static('public', {
   setHeaders: (res, path) => {
     if (path.endsWith('.html')) {
