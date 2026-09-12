@@ -139,10 +139,10 @@
             "endTime": 42
           },
           {
-            "id": "r17",
-            "text": "Kestik tamam kestik.",
-            "startTime": 42,
-            "endTime": 43
+            "id": "r18",
+            "text": "Asla kesmicem!",
+            "startTime": 43,
+            "endTime": 44
           }
         ]
       },
@@ -188,10 +188,10 @@
             "endTime": 38
           },
           {
-            "id": "r18",
-            "text": "Asla kesmicem!",
-            "startTime": 43,
-            "endTime": 44
+            "id": "r17",
+            "text": "Kestik tamam kestik",
+            "startTime": 42,
+            "endTime": 43
           }
         ]
       },
