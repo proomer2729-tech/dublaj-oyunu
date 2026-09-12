@@ -650,5 +650,84 @@
         ]
       }
     ]
+  },
+  {
+    "id": "kolpacino-fikret-sise",
+    "title": "Kolpaçino - Fikret Abi Şişe",
+    "category": "Film",
+    "videoUrl": "/videos/kolpacino-sise.mp4",
+    "duration": 53,
+    "maxPlayers": 3,
+    "characters": [
+      {
+        "id": "char_1",
+        "name": "Ferhat Abi",
+        "avatar": "😰",
+        "repliks": [
+          {
+            "id": "r1",
+            "text": "Ya ben sana ne dedim oğlum? Fikret abi bir bakar mısın abi bir saniye.",
+            "startTime": 0,
+            "endTime": 4
+          },
+          {
+            "id": "r2",
+            "text": "Abiciğim, Müjdat konumuzla ilgili mevzuyu sonradan uyandırdı bana. Biraz geç oldu, eşeklik yaptı. Konumunuzu bilmiyordum, özür dilerim.",
+            "startTime": 4,
+            "endTime": 13
+          },
+          {
+            "id": "r3",
+            "text": "Şimdi tanıdım ağabey, nasılsınız, iyi misiniz? Sağ ol, teşekkür ederim.",
+            "startTime": 13,
+            "endTime": 16
+          },
+          {
+            "id": "r7",
+            "text": "Abi elini ayağını öpeyim, görürsem... Abi elini ayağını öpeyim abi, lütfen ya!",
+            "startTime": 29,
+            "endTime": 44
+          }
+        ]
+      },
+      {
+        "id": "char_2",
+        "name": "Hüseyin",
+        "avatar": "🤓",
+        "repliks": [
+          {
+            "id": "r4",
+            "text": "Ayrıca ağabey yani şiddet bir çözüm yolu değil. Ve ben buradayken...",
+            "startTime": 16,
+            "endTime": 22
+          }
+        ]
+      },
+      {
+        "id": "char_3",
+        "name": "Fikret",
+        "avatar": "👿",
+        "repliks": [
+          {
+            "id": "r5",
+            "text": "Nasılsın tamam, ben karışmam...",
+            "startTime": 22,
+            "endTime": 26
+          },
+          {
+            "id": "r6",
+            "text": "Demin ne diyordunuz lan amına kodumun...",
+            "startTime": 26,
+            "endTime": 29
+          },
+          {
+            "id": "r8",
+            "text": "Bunu bunun içine sokar... Şişeniz de girer, kurt ağızdan çıkar! Bu kafayı öp!",
+            "startTime": 44,
+            "endTime": 52
+          }
+        ]
+      }
+    ]
   }
 ]
