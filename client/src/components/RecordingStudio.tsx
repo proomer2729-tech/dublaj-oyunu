@@ -187,16 +187,28 @@ export default function RecordingStudio({ room }: { room: any }) {
 
             {isMyTurn ? (
               <div className="flex flex-col items-center gap-4 w-full">
-                {phase.status === 'WAITING_FOR_ACTION' && (
-                  <div className="flex gap-4 justify-center w-full">
-                    <button onClick={() => socket.emit('watch_scene', roomCode)} className="flex-1 max-w-[200px] bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-colors">
-                      👀 Sahneyi İzle
-                    </button>
-                    <button onClick={() => socket.emit('start_dubbing', roomCode)} className="flex-1 max-w-[250px] bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-lg shadow-[0_0_15px_rgba(239,68,68,0.5)] transition-all transform hover:scale-105">
-                      🎙️ Şimdi Seslendir
-                    </button>
-                  </div>
-                )}
+                  {phase.status === 'WAITING_FOR_ACTION' && (
+                    <div className="flex gap-4 justify-center w-full">
+                      <button onClick={() => {
+                        if (videoRef.current && currentReplik) {
+                          videoRef.current.currentTime = currentReplik.startTime;
+                          videoRef.current.play().catch(e => console.error('Play blocked:', e));
+                        }
+                        socket.emit('watch_scene', roomCode);
+                      }} className="flex-1 max-w-[200px] bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-colors">
+                        👁️ Sahneyi İzle
+                      </button>
+                      <button onClick={() => {
+                        if (videoRef.current && currentReplik) {
+                          videoRef.current.currentTime = currentReplik.startTime;
+                          videoRef.current.play().catch(e => console.error('Play blocked:', e));
+                        }
+                        socket.emit('start_dubbing', roomCode);
+                      }} className="flex-1 max-w-[250px] bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-lg shadow-[0_0_15px_rgba(239,68,68,0.5)] transition-all transform hover:scale-105">
+                        🎙️ Şimdi Seslendir
+                      </button>
+                    </div>
+                  )}
                 
                 {phase.status === 'WATCHING_SCENE' && (
                   <div className="text-blue-400 font-bold animate-pulse text-xl">

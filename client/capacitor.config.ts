@@ -5,7 +5,7 @@ const config: CapacitorConfig = {
   appName: 'Dublaj',
   webDir: 'out',
   server: {
-    url: 'https://07b6716aabcbf0.lhr.life',
+    url: 'https://dublaj-oyunu.onrender.com',
     cleartext: true
   }
 };
