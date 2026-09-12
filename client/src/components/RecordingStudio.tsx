@@ -44,15 +44,19 @@ export default function RecordingStudio({ room }: { room: any }) {
       videoRef.current.currentTime = currentReplik.startTime;
       videoRef.current.pause();
     } else if (phase.status === 'WATCHING_SCENE') {
-      videoRef.current.currentTime = currentReplik.startTime;
-      videoRef.current.play();
+      if (Math.abs(videoRef.current.currentTime - currentReplik.startTime) > 0.5) {
+        videoRef.current.currentTime = currentReplik.startTime;
+      }
+      videoRef.current.play().catch(e => console.error(e));
     } else if (phase.status === 'DUBBING') {
-      videoRef.current.currentTime = currentReplik.startTime;
-      videoRef.current.play();
+      if (Math.abs(videoRef.current.currentTime - currentReplik.startTime) > 0.5) {
+        videoRef.current.currentTime = currentReplik.startTime;
+      }
+      videoRef.current.play().catch(e => console.error(e));
     } else if (phase.status === 'REVIEWING') {
       videoRef.current.pause();
     } else if (phase.status === 'PLAYING_TO_NEXT') {
-      videoRef.current.play();
+      videoRef.current.play().catch(e => console.error(e));
     }
   }, [phase?.status, currentReplik?.id]);
 
@@ -165,6 +169,7 @@ export default function RecordingStudio({ room }: { room: any }) {
             onEnded={handleVideoEnded}
             muted={isVideoMuted}
             playsInline
+            preload="auto"
           />
           
           {/* Progress Bar */}
