@@ -10,6 +10,7 @@ export default function RecordingStudio({ room }: { room: any }) {
   const [recordings, setRecordings] = useState<{[key:string]: Blob}>({});
   const [uploadStatus, setUploadStatus] = useState<string>('');
   const [mediaStream, setMediaStream] = useState<MediaStream | null>(null);
+  const [hearOriginal, setHearOriginal] = useState(false);
   const audioChunksRef = useRef<Blob[]>([]);
   const activeMediaRecorder = useRef<MediaRecorder | null>(null);
 
@@ -154,7 +155,7 @@ export default function RecordingStudio({ room }: { room: any }) {
   
   // Video should be muted DURING dubbing so the original audio doesn't bleed into the mic.
   // Otherwise, they should hear it.
-  const isVideoMuted = phase?.status === 'DUBBING';
+  const isVideoMuted = phase?.status === 'DUBBING' && !hearOriginal;
 
   return (
     <div className="flex flex-col h-full bg-gray-900 overflow-y-auto">
@@ -209,6 +210,18 @@ export default function RecordingStudio({ room }: { room: any }) {
 
             {isMyTurn ? (
               <div className="flex flex-col items-center gap-4 w-full">
+                  <div className="flex items-center gap-2 mb-2 bg-gray-700/50 px-4 py-2 rounded-lg">
+                    <input 
+                      type="checkbox" 
+                      id="hearOriginal" 
+                      checked={hearOriginal} 
+                      onChange={(e) => setHearOriginal(e.target.checked)}
+                      className="w-4 h-4 cursor-pointer rounded border-gray-600 bg-gray-700 text-blue-500 focus:ring-blue-500"
+                    />
+                    <label htmlFor="hearOriginal" className="cursor-pointer text-sm text-gray-300">
+                      Kaydederken orijinal sesi duy (Kulaklık önerilir)
+                    </label>
+                  </div>
                   {phase.status === 'WAITING_FOR_ACTION' && (
                     <div className="flex gap-4 justify-center w-full">
                       <button onClick={() => {
