@@ -661,70 +661,82 @@
     "characters": [
       {
         "id": "char_1",
-        "name": "Ferhat Abi",
-        "avatar": "😰",
+        "name": "Abi",
+        "avatar": "👿",
         "repliks": [
           {
             "id": "r1",
-            "text": "Ya ben sana ne dedim oğlum? Fikret abi bir bakar mısın abi bir saniye.",
-            "startTime": 0,
-            "endTime": 4
-          },
-          {
-            "id": "r2",
-            "text": "Abiciğim, Müjdat konumuzla ilgili mevzuyu sonradan uyandırdı bana. Biraz geç oldu, eşeklik yaptı. Konumunuzu bilmiyordum, özür dilerim.",
-            "startTime": 4,
-            "endTime": 13
+            "text": "Ben size ne dedim oğlum",
+            "startTime": 5,
+            "endTime": 6
           },
           {
             "id": "r3",
-            "text": "Şimdi tanıdım ağabey, nasılsınız, iyi misiniz? Sağ ol, teşekkür ederim.",
-            "startTime": 13,
-            "endTime": 16
+            "text": "Sağol teşekkür ederim",
+            "startTime": 16,
+            "endTime": 19
+          },
+          {
+            "id": "r5",
+            "text": "Gel lan buraya",
+            "startTime": 24,
+            "endTime": 25
           },
           {
             "id": "r7",
-            "text": "Abi elini ayağını öpeyim, görürsem... Abi elini ayağını öpeyim abi, lütfen ya!",
+            "text": "Sen ne diyiniz lan amına koyduğumun",
             "startTime": 29,
-            "endTime": 44
+            "endTime": 33
+          },
+          {
+            "id": "r9",
+            "text": "Lan birdaha sizi burda görürsem okul arabasının içine sokar şişenizden girer gırtlağınızdan çıkarım bu gırtlağınızdan",
+            "startTime": 42,
+            "endTime": 51
           }
         ]
       },
       {
         "id": "char_2",
-        "name": "Hüseyin",
-        "avatar": "🤓",
+        "name": "Fikret",
+        "avatar": "😰",
         "repliks": [
           {
-            "id": "r4",
-            "text": "Ayrıca ağabey yani şiddet bir çözüm yolu değil. Ve ben buradayken...",
-            "startTime": 16,
-            "endTime": 22
+            "id": "r2",
+            "text": "Abi ee Müjdat konumunuzla ilgili mevzuyu sonradan uyandırdı bana biraz geç oldu eşşeklik yapdı konumunuzu bilmiyodum özür dilerim şimdi tanıdım abi nasılsınız",
+            "startTime": 7,
+            "endTime": 17
+          },
+          {
+            "id": "r8",
+            "text": "Ahh abi elini ayağını öpim abi lütfen ya abi öldüm ah abi lütfen ah abi lütfen dedim yaa ahh tamam tamam tamam tamam",
+            "startTime": 33,
+            "endTime": 42
+          },
+          {
+            "id": "r10",
+            "text": "Evet",
+            "startTime": 52,
+            "endTime": 53
           }
         ]
       },
       {
         "id": "char_3",
-        "name": "Fikret",
-        "avatar": "👿",
+        "name": "Müjdat",
+        "avatar": "🤓",
         "repliks": [
           {
-            "id": "r5",
-            "text": "Nasılsın tamam, ben karışmam...",
-            "startTime": 22,
-            "endTime": 26
+            "id": "r4",
+            "text": "Ayrıca abi yani şiddet bir çözüm yolu değil ve ben burdayken fikret abiye karışamazssınız",
+            "startTime": 20,
+            "endTime": 24
           },
           {
             "id": "r6",
-            "text": "Demin ne diyordunuz lan amına kodumun...",
+            "text": "Tamam ben karışmıyorum ben karışmıyorum",
             "startTime": 26,
-            "endTime": 29
-          },
-          {
-            "id": "r8",
-            "text": "Bunu bunun içine sokar... Şişeniz de girer, kurt ağızdan çıkar! Bu kafayı öp!",
-            "startTime": 44,
-            "endTime": 52
+            "endTime": 28
           }
         ]
       }
