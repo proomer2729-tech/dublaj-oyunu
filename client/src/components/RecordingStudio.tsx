@@ -71,26 +71,41 @@ export default function RecordingStudio({ room }: { room: any }) {
   useEffect(() => {
     if (!phase || !currentReplik || !isMyTurn || !mediaStream) return;
 
+    let recorder = null;
+
     if (phase.status === 'DUBBING') {
       audioChunksRef.current = [];
-      const recorder = new MediaRecorder(mediaStream, { mimeType: 'audio/webm' });
-      recorder.ondataavailable = (e) => {
-        if (e.data.size > 0) audioChunksRef.current.push(e.data);
-      };
-      const tiedReplikId = currentReplik.id;
-      recorder.onstop = () => {
-        const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
-        setRecordings(prev => ({ ...prev, [tiedReplikId]: audioBlob }));
-      };
-      recorder.start(100);
-      activeMediaRecorder.current = recorder;
+      try {
+        recorder = new MediaRecorder(mediaStream, { mimeType: 'audio/webm' });
+        recorder.ondataavailable = (e) => {
+          if (e.data.size > 0) audioChunksRef.current.push(e.data);
+        };
+        const tiedReplikId = currentReplik.id;
+        recorder.onstop = () => {
+          if (audioChunksRef.current.length > 0) {
+            const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
+            setRecordings(prev => ({ ...prev, [tiedReplikId]: audioBlob }));
+          }
+        };
+        recorder.start(100);
+        activeMediaRecorder.current = recorder;
+      } catch (e) {
+        console.error("MediaRecorder start failed:", e);
+      }
     } else if (phase.status === 'REVIEWING' || phase.status === 'WAITING_FOR_ACTION' || phase.status === 'WATCHING_SCENE') {
       if (activeMediaRecorder.current && activeMediaRecorder.current.state === 'recording') {
         activeMediaRecorder.current.stop();
         activeMediaRecorder.current = null;
       }
     }
-  }, [phase?.status]);
+
+    // Cleanup function when phase changes rapidly
+    return () => {
+      if (recorder && recorder.state === 'recording') {
+        recorder.stop();
+      }
+    };
+  }, [phase?.status, currentReplik?.id, isMyTurn, mediaStream]);
 
   // Time update for progress and state triggers
   const handleTimeUpdate = () => {
@@ -233,19 +248,11 @@ export default function RecordingStudio({ room }: { room: any }) {
                   {phase.status === 'WAITING_FOR_ACTION' && (
                     <div className="flex gap-4 justify-center w-full">
                       <button onClick={() => {
-                        if (videoRef.current && currentReplik) {
-                          videoRef.current.currentTime = currentReplik.startTime;
-                          videoRef.current.play().catch(e => console.error('Play blocked:', e));
-                        }
                         socket.emit('watch_scene', roomCode);
                       }} className="flex-1 max-w-[200px] bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-colors">
                         👁️ Sahneyi İzle
                       </button>
                       <button onClick={() => {
-                        if (videoRef.current && currentReplik) {
-                          videoRef.current.currentTime = currentReplik.startTime;
-                          videoRef.current.play().catch(e => console.error('Play blocked:', e));
-                        }
                         socket.emit('start_dubbing', roomCode);
                       }} className="flex-1 max-w-[250px] bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-lg shadow-[0_0_15px_rgba(239,68,68,0.5)] transition-all transform hover:scale-105">
                         🎙️ Şimdi Seslendir
