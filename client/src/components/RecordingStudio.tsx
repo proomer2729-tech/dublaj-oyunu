@@ -137,11 +137,13 @@ export default function RecordingStudio({ room }: { room: any }) {
 
     try {
       setUploadStatus('Ses Yükleniyor...');
-      await fetch('/api/upload', { method: 'POST', body: formData });
+      const res = await fetch('/api/upload', { method: 'POST', body: formData });
+      if (!res.ok) throw new Error('Upload failed');
       setUploadStatus('');
       socket.emit('approve_dubbing', roomCode);
-    } catch (err) {
-      alert('Ses yüklenirken hata oluştu!');
+    } catch (e) {
+      console.error(e);
+      alert('Ses yüklenirken bir hata oluştu! Lütfen tekrar deneyin.');
       setUploadStatus('');
     }
   };
