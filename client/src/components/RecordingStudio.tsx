@@ -180,6 +180,23 @@ export default function RecordingStudio({ room }: { room: any }) {
           )}
         </div>
 
+        <button 
+          onClick={() => {
+            if (videoRef.current && currentReplik) {
+              videoRef.current.load();
+              setTimeout(() => {
+                if (videoRef.current) {
+                  videoRef.current.currentTime = currentReplik.startTime;
+                  videoRef.current.play().catch(e => console.error(e));
+                }
+              }, 100);
+            }
+          }}
+          className="mt-2 text-xs text-gray-500 underline hover:text-gray-300 transition-colors"
+        >
+          Video donduysa veya siyah ekranda kaldıysa buraya tıkla
+        </button>
+
         {/* State Machine UI */}
         {phase && currentReplik && (
           <div className="w-full max-w-4xl bg-gray-800 p-6 rounded-xl mt-4 text-center shadow-xl border border-gray-700">
