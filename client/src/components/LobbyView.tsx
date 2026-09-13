@@ -3,6 +3,7 @@
 import { getSocket } from '../lib/socket';
 import { motion } from 'framer-motion';
 import { Crown, Play, User } from 'lucide-react';
+import AdsterraNative from './AdsterraNative';
 
 export default function LobbyView({ room, scenes }: { room: any, scenes: any[] }) {
   const socket = getSocket();
@@ -57,6 +58,9 @@ export default function LobbyView({ room, scenes }: { room: any, scenes: any[] }
 
       {/* Scene & Character Selection */}
       <div className="lg:col-span-2 space-y-6">
+        
+        <AdsterraNative />
+
         <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700">
           <h2 className="text-xl font-bold mb-4">Sahne Seç</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
