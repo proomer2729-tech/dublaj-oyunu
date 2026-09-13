@@ -29,7 +29,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        {/* Adsterra Social Bar */}
         <script src="https://pl31327206.profitableratecpmnetwork.com/a9/f1/d0/a9f1d0e61194d37f439a2fe68b8b9f6c.js" async></script>
+        {/* Adsterra Popunder */}
+        <script src="https://pl31328476.profitableratecpmnetwork.com/bc/88/79/bc88797ee9480286c4e8c172ef5336c3.js" async></script>
       </body>
     </html>
   );
