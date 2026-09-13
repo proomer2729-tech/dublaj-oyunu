@@ -134,6 +134,16 @@ function HomeContent() {
           </div>
         </div>
       </motion.div>
+
+      {/* Donate Button */}
+      <a 
+        href="https://donate.bynogame.com/dublajer" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-3 rounded-full font-bold shadow-2xl shadow-orange-500/20 hover:scale-105 transition-transform flex items-center gap-2 z-50 border-2 border-white/10"
+      >
+        ☕ Bize Kahve Ismarla
+      </a>
     </div>
   );
 }
