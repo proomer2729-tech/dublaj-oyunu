@@ -56,7 +56,7 @@ export default function Home() {
       >
         <h1 className="text-6xl font-black mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500 flex items-center justify-center gap-4">
           <Mic size={48} className="text-pink-500" />
-          Dublaj.io
+          Dublajer.ioi
         </h1>
         <p className="text-xl text-slate-400">Arkadaşlarınla efsane sahneleri yeniden seslendir!</p>
       </motion.div>
