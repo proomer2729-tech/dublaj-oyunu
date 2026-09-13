@@ -135,6 +135,35 @@ function HomeContent() {
         </div>
       </motion.div>
 
+      {/* Share Button */}
+      <button 
+        onClick={async (e) => {
+          const btn = e.currentTarget;
+          const originalText = btn.innerText;
+          btn.innerText = '⏳ Kısalıyor...';
+          
+          const inviteUrl = `${window.location.origin}`;
+          try {
+            const res = await fetch('/api/shorten', { 
+              method: 'POST', 
+              headers: {'Content-Type': 'application/json'},
+              body: JSON.stringify({ url: inviteUrl })
+            });
+            const data = await res.json();
+            navigator.clipboard.writeText(data.shortUrl);
+            btn.innerText = '✅ Link Kopyalandı!';
+            setTimeout(() => btn.innerText = originalText, 2000);
+          } catch(err) {
+            navigator.clipboard.writeText(inviteUrl);
+            btn.innerText = '✅ Kopyalandı!';
+            setTimeout(() => btn.innerText = originalText, 2000);
+          }
+        }}
+        className="fixed bottom-6 left-6 bg-gradient-to-r from-green-500 to-emerald-600 text-white px-6 py-3 rounded-full font-bold shadow-2xl shadow-green-500/20 hover:scale-105 transition-transform flex items-center gap-2 z-50 border-2 border-white/10"
+      >
+        💰 Oyunu Paylaş & Kazan
+      </button>
+
       {/* Donate Button */}
       <a 
         href="https://donate.bynogame.com/dublajer" 
