@@ -62,8 +62,35 @@ function RoomContent() {
         <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
           Dublaj.io
         </h1>
-        <div className="flex items-center gap-4">
-          <div className="bg-slate-900 px-4 py-2 rounded-lg font-mono font-bold tracking-wider border border-slate-700">
+        <div className="flex items-center gap-2 sm:gap-4">
+          <button 
+            onClick={async (e) => {
+              const btn = e.currentTarget;
+              const originalText = btn.innerText;
+              btn.innerText = '⏳ Kısalıyor...';
+              
+              const inviteUrl = `${window.location.origin}/?code=${roomState.code}`;
+              try {
+                const res = await fetch('/api/shorten', { 
+                  method: 'POST', 
+                  headers: {'Content-Type': 'application/json'},
+                  body: JSON.stringify({ url: inviteUrl })
+                });
+                const data = await res.json();
+                navigator.clipboard.writeText(data.shortUrl);
+                btn.innerText = '✅ Link Kopyalandı!';
+                setTimeout(() => btn.innerText = originalText, 2000);
+              } catch(err) {
+                navigator.clipboard.writeText(inviteUrl);
+                btn.innerText = '✅ Kopyalandı!';
+                setTimeout(() => btn.innerText = originalText, 2000);
+              }
+            }}
+            className="bg-green-600 hover:bg-green-500 text-white px-3 sm:px-4 py-2 rounded-lg font-bold shadow-lg text-xs sm:text-sm flex items-center gap-1 transition-all"
+          >
+            💰 Davet Linkini Kopyala
+          </button>
+          <div className="bg-slate-900 px-3 sm:px-4 py-2 rounded-lg font-mono font-bold tracking-wider border border-slate-700 text-sm sm:text-base hidden sm:block">
             KOD: <span className="text-pink-500">{roomState.code}</span>
           </div>
         </div>

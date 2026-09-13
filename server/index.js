@@ -313,6 +313,23 @@ io.on('connection', (socket) => {
   });
 });
 
+// TRLink Shortener Endpoint
+app.post('/api/shorten', async (req, res) => {
+  const { url } = req.body;
+  try {
+    const response = await fetch(`https://tr.link/api?api=6436f3454967f2b05790eb6a7f615f00caea2a9c&url=${encodeURIComponent(url)}`);
+    const data = await response.json();
+    if (data.shortenedUrl) {
+      res.json({ shortUrl: data.shortenedUrl });
+    } else {
+      res.json({ shortUrl: url });
+    }
+  } catch (error) {
+    console.error("TRLink error:", error);
+    res.json({ shortUrl: url });
+  }
+});
+
 // Fallback for SPA routing
 app.use((req, res) => {
   res.set('Cache-Control', 'no-store, no-cache, must-revalidate, private');

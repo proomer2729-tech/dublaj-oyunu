@@ -1,19 +1,20 @@
 'use client';
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useState, useEffect, Suspense } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { getSocket } from '../lib/socket';
 import { Mic, Users, Video } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const AVATARS = ['😎', '🤠', '👽', '🤖', '🤡', '👻'];
+const AVATARS = ['😎', '🤡', '🤠', '👽', '👻', '🤖'];
 
-export default function Home() {
+function HomeContent() {
+  const router = useRouter();
+  const searchParams = useSearchParams();
   const [nickname, setNickname] = useState('');
   const [avatar, setAvatar] = useState(AVATARS[0]);
-  const [roomCode, setRoomCode] = useState('');
+  const [roomCode, setRoomCode] = useState(searchParams.get('code') || '');
   const [error, setError] = useState('');
-  const router = useRouter();
 
   const handleCreateRoom = () => {
     if (!nickname.trim()) {
@@ -136,3 +137,4 @@ export default function Home() {
     </div>
   );
 }
+export default function Home() { return <Suspense fallback={<div></div>}><HomeContent /></Suspense>; }
