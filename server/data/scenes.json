@@ -1044,5 +1044,59 @@
         ]
       }
     ]
+  },
+  {
+    "id": "kamil-komutan",
+    "title": "Komutan ve Kamil",
+    "category": "Film",
+    "videoUrl": "/videos/kamil-komutan.mp4",
+    "duration": 17,
+    "maxPlayers": 2,
+    "characters": [
+      {
+        "id": "char_1",
+        "name": "Komutan",
+        "avatar": "👨‍✈️",
+        "repliks": [
+          {
+            "id": "r1",
+            "text": "Kamil",
+            "startTime": 2,
+            "endTime": 3
+          },
+          {
+            "id": "r2",
+            "text": "yemeğin bittiyse babacım bi zahmet zıplıyosun kuleye",
+            "startTime": 4,
+            "endTime": 7
+          },
+          {
+            "id": "r4",
+            "text": "Lan Ne kulesi olcak nöbet tutucan kamil",
+            "startTime": 9,
+            "endTime": 13
+          }
+        ]
+      },
+      {
+        "id": "char_2",
+        "name": "Kamil",
+        "avatar": "👱‍♂️",
+        "repliks": [
+          {
+            "id": "r3",
+            "text": "Ne Kulesi Abi",
+            "startTime": 8,
+            "endTime": 9
+          },
+          {
+            "id": "r5",
+            "text": "ne nöbeti abi gece vakti hem bu saatten sonra kim gelicek",
+            "startTime": 13,
+            "endTime": 16
+          }
+        ]
+      }
+    ]
   }
 ]
