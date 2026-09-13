@@ -310,7 +310,12 @@ io.on('connection', (socket) => {
 app.post('/api/shorten', async (req, res) => {
   const { url } = req.body;
   try {
-    const response = await fetch(`https://tr.link/api?api=6436f3454967f2b05790eb6a7f615f00caea2a9c&url=${encodeURIComponent(url)}`);
+    const response = await fetch(`https://ay.live/api/?api=6436f3454967f2b05790eb6a7f615f00caea2a9c&url=${encodeURIComponent(url)}`, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
+        'Accept': 'application/json'
+      }
+    });
     const data = await response.json();
     if (data.shortenedUrl) {
       res.json({ shortUrl: data.shortenedUrl });
