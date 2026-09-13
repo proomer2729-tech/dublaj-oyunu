@@ -27,20 +27,32 @@ export default function LobbyView({ room, scenes }: { room: any, scenes: any[] }
   return (
     <div className="p-6 max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
       {/* Players List */}
-      <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700">
-        <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
-          <User className="text-violet-500" />
-          Oyuncular ({room.players.length})
-        </h2>
-        <div className="space-y-3">
-          {room.players.map((p: any) => (
-            <div key={p.id} className="flex items-center gap-3 bg-slate-900 p-3 rounded-xl border border-slate-700">
-              <span className="text-2xl">{p.avatar}</span>
-              <span className="font-semibold flex-grow">{p.nickname}</span>
-              {room.hostId === p.id && <Crown size={20} className="text-yellow-500" />}
-            </div>
-          ))}
+      <div className="flex flex-col gap-4">
+        <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700">
+          <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
+            <User className="text-violet-500" />
+            Oyuncular ({room.players.length})
+          </h2>
+          <div className="space-y-3">
+            {room.players.map((p: any) => (
+              <div key={p.id} className="flex items-center gap-3 bg-slate-900 p-3 rounded-xl border border-slate-700">
+                <span className="text-2xl">{p.avatar}</span>
+                <span className="font-semibold flex-grow">{p.nickname}</span>
+                {room.hostId === p.id && <Crown size={20} className="text-yellow-500" />}
+              </div>
+            ))}
+          </div>
         </div>
+
+        {/* Adsterra Smartlink Button */}
+        <a 
+          href="https://www.profitableratecpmnetwork.com/yis1jk6fv?key=9f4ef8f61d0c6fe3605ad9cdc8925e48" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="w-full bg-gradient-to-r from-yellow-500 to-amber-600 text-white p-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:scale-105 transition-transform shadow-lg shadow-yellow-500/20 border-2 border-yellow-300/30 animate-pulse"
+        >
+          🎁 Yayıncıya Destek Ol
+        </a>
       </div>
 
       {/* Scene & Character Selection */}
