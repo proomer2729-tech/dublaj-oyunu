@@ -10,18 +10,28 @@ export default function CinemaView({ room }: { room: any }) {
   const socket = getSocket();
   const videoRef = useRef<HTMLVideoElement>(null);
   const [reactions, setReactions] = useState<{id: string, emoji: string, x: number}[]>([]);
+  const isRemoteChange = useRef(false);
 
   useEffect(() => {
     socket.on('sync_video', (data: any) => {
       if (!videoRef.current) return;
       
+      isRemoteChange.current = true;
       if (data.action === 'play') {
-        videoRef.current.currentTime = data.currentTime;
+        if (Math.abs(videoRef.current.currentTime - data.currentTime) > 0.5) {
+          videoRef.current.currentTime = data.currentTime;
+        }
         videoRef.current.play().catch(e => console.log(e));
       } else if (data.action === 'pause') {
-        videoRef.current.currentTime = data.currentTime;
+        if (Math.abs(videoRef.current.currentTime - data.currentTime) > 0.5) {
+          videoRef.current.currentTime = data.currentTime;
+        }
         videoRef.current.pause();
       }
+      
+      setTimeout(() => {
+        isRemoteChange.current = false;
+      }, 300);
     });
 
     socket.on('new_reaction', (data: any) => {
@@ -45,13 +55,13 @@ export default function CinemaView({ room }: { room: any }) {
   }, []);
 
   const handlePlay = () => {
-    if (videoRef.current) {
+    if (videoRef.current && !isRemoteChange.current) {
       socket.emit('video_control', { roomCode: room.code, action: 'play', currentTime: videoRef.current.currentTime });
     }
   };
 
   const handlePause = () => {
-    if (videoRef.current) {
+    if (videoRef.current && !isRemoteChange.current) {
       socket.emit('video_control', { roomCode: room.code, action: 'pause', currentTime: videoRef.current.currentTime });
     }
   };
