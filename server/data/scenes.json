@@ -1098,5 +1098,28 @@
         ]
       }
     ]
+  },
+  {
+    "id": "idris-kocovali",
+    "title": "İdris Koçovalı Ölmüş",
+    "category": "Dizi",
+    "videoUrl": "/videos/idris-kocovali.mp4",
+    "duration": 32,
+    "maxPlayers": 1,
+    "characters": [
+      {
+        "id": "char_1",
+        "name": "Cumali Koçovalı",
+        "avatar": "🧔‍♂️",
+        "repliks": [
+          {
+            "id": "r1",
+            "text": "laaaaaaan babaaaaaa babammm lannnnn lan kalkın laaaannnnn uyumayın laaannnnn uyumayın laaan idris koçovalı ölmüş idris koçovalı ölmüş lannnn siz niye yaşıyorsunuz siz neye yaşıyorsunuz laaaannn idrisin oğulları babanızı aldılar laannn burdamısınız laaann burdamısınız laaannn",
+            "startTime": 0,
+            "endTime": 32
+          }
+        ]
+      }
+    ]
   }
 ]
