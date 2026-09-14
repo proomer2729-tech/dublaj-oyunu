@@ -60,7 +60,7 @@ function RoomContent() {
     <div className="min-h-screen bg-slate-900 text-white flex flex-col">
       <header className="bg-slate-800 border-b border-slate-700 p-4 flex justify-between items-center">
         <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
-          Dublaj.io
+          Dublajer.ioi
         </h1>
         <div className="flex items-center gap-2 sm:gap-4">
           <button 
